@@ -1,0 +1,12 @@
+export type Member={id:string;name:string;role:string;interest:string;budget:number;food:string;style:string;essential?:string};
+export type Message={id:string;author:string;text:string;time:string};
+export type Expense={id:string;title:string;category:string;amount:number;paidBy:string};
+export type Activity={id:string;time:string;title:string;detail:string;cost:number};
+export type TripDay={day:number;date:string;activities:Activity[]};
+export type TripState={groupName:string;members:Member[];messages:Message[];votes:Record<string,string>;expenses:Expense[];itinerary:TripDay[];destination:string;approved:boolean;};
+export type TripPreferences={transport:string;accommodation:string;food:string;interests:string[]};
+export type CreatedTrip={id:string;from:string;destination:string;departure:string;returning:string;travellers:number;budget:number;transport:string;accommodation:string;food:string;interests:string[];createdAt:string;status:string;itinerary?:TripDay[]};
+export type TripStore={version:1;trips:CreatedTrip[];savedTripIds:string[];activeTripId:string|null};
+export type ProviderCategory='Hotels'|'Transport'|'Restaurants'|'Activities';
+export type DemoProvider={id:string;name:string;category:ProviderCategory;destination:string;description:string};
+export type SubmittedEnquiry={id:string;providerName:string;category:ProviderCategory;destination:string;submittedAt:string;status:'Demo Enquiry'};
