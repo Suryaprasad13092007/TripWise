@@ -21,6 +21,20 @@ TripWise is an AI-powered group travel planning platform designed to make planni
 - **Saved Trips:** Save trips for quick access later.
 - **Enquiry Management:** Submit and view demo enquiries.
 
+## 📸 Screenshots
+
+### 1. Home Page
+![TripWise Home Page](screenshots/home.png)
+
+### 2. Dashboard
+![TripWise Dashboard](screenshots/dashboard.png)
+
+### 3. Trip Guide
+![TripWise Trip Guide](screenshots/trip-guide.png)
+
+### 4. Destinations
+![TripWise Destinations](screenshots/destinations.png)
+
 ## 🛠️ Tech Stack
 
 - React
